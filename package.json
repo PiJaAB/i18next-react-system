@@ -8,8 +8,7 @@
     "build": "npm run build:clean && npm run build:lib && npm run build:flow",
     "build:clean": "rimraf lib",
     "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
-    "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
-    "prepare": "npm run build"
+    "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib"
   },
   "repository": {
     "type": "git",
