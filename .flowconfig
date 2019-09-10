@@ -1,0 +1,33 @@
+[ignore]
+<PROJECT_ROOT>/lib/.*
+
+[untyped]
+<PROJECT_ROOT>/node_modules/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+# note: both name_mapper and resolve_dirname can be specified multiple times
+module.system.node.resolve_dirname=node_modules
+module.name_mapper='^src/' -> '<PROJECT_ROOT>/src/'
+
+module.system=haste
+module.system.haste.use_name_reducers=true
+# get basename
+module.system.haste.name_reducers='^.*/\([a-zA-Z0-9$_.-]+\.js\(\.flow\)?\)$' -> '\1'
+# strip .js or .js.flow suffix
+module.system.haste.name_reducers='^\(.*\)\.js\(\.flow\)?$' -> '\1'
+
+munge_underscores=true
+
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FlowFixMeProps
+suppress_type=$FlowFixMeState
+
+[version]
+^0.92.0
