@@ -2,7 +2,6 @@
 <PROJECT_ROOT>/lib/.*
 
 [untyped]
-<PROJECT_ROOT>/node_modules/.*
 
 [include]
 

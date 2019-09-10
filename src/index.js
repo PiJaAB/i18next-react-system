@@ -13,3 +13,12 @@ export type JSONObj = _JSONObj;
 
 export { default as i18n } from './i18n';
 export { backendT, tParse } from './transHelpers';
+export {
+  useTranslation,
+  WithTranslation,
+  Translation,
+  Trans,
+  I18nextPRovider,
+  useSSR,
+  withSSR,
+} from 'react-i18next';
