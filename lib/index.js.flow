@@ -15,7 +15,7 @@ export { default as i18n } from './i18n';
 export { backendT, tParse } from './transHelpers';
 export {
   useTranslation,
-  WithTranslation,
+  withTranslation,
   Translation,
   Trans,
   I18nextPRovider,
