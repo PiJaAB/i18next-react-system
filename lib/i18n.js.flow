@@ -7,4 +7,3 @@ i18n
   .use(initReactI18next);
 
 export default i18n;
-export type TFunc = (keys: string | string[], options?: {}) => string;

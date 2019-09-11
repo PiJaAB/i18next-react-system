@@ -29,4 +29,4 @@ suppress_type=$FlowFixMeProps
 suppress_type=$FlowFixMeState
 
 [version]
-^0.92.0
+^0.107.0

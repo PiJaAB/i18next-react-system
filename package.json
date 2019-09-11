@@ -33,7 +33,7 @@
     "eslint-import-resolver-node": "^0.3.2",
     "eslint-plugin-flowtype": "^3.4.2",
     "eslint-plugin-import": "^2.16.0",
-    "flow-bin": "^0.92.0",
+    "flow-bin": "^0.107.0",
     "flow-copy-source": "^2.0.8",
     "rimraf": "^3.0.0"
   },
