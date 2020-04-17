@@ -16,7 +16,7 @@ declare module 'i18next' {
     nestingPrefixEscaped?: string,
     nestingSuffixEscaped?: string,
     defaultVariables?: string,
-    ...,
+    ...
   };
   declare type ResourceData = { [key: string]: string | ResourceData, ... };
   declare type InitOptions = {
@@ -52,7 +52,7 @@ declare module 'i18next' {
     detection?: Object,
     backend?: Object,
     cache?: Object,
-    ...,
+    ...
   };
   declare type TFunction = (key?: ?string, data?: ?Object) => string;
   declare type CallbackFn = (err: any, t: TFunction) => any;
@@ -84,8 +84,8 @@ declare module 'i18next' {
       resources: {
         key: string,
         value: any,
-        ...,
-      }[],
+        ...
+      }[]
     ): void;
     addResourceBundle(
       lng: string,

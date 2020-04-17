@@ -18,7 +18,7 @@ declare module 'react-i18next' {
     t: TFunction,
     i18n: i18next,
     tReady: boolean,
-    ...,
+    ...
   };
 
   declare export function withTranslation<Component: React$ComponentType<WithTransOutputProps>>(
@@ -44,7 +44,7 @@ declare module 'react-i18next' {
     defaults?: string,
     values?: Object,
     components: React$ComponentType[],
-    ...,
+    ...
   };
 
   declare export var Trans: React$ComponentType<TransProps>;
@@ -53,7 +53,7 @@ declare module 'react-i18next' {
     children: (t: TFunction, opts: { i18n: i18next}) => React$ComponentType,
     ns?: string | string[],
     i18n?: i18next,
-    ...,
+    ...
   };
 
   declare export var Translation: React$ComponentType<TranslationProps>;
@@ -61,7 +61,7 @@ declare module 'react-i18next' {
   declare type ProviderProps = {
     i18n: i18next,
     children: React$Element<*>,
-    ...,
+    ...
   };
   declare export var I18nextProvider: React$ComponentType<ProviderProps>;
 

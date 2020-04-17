@@ -1,12 +1,12 @@
 // @flow
 
-import { type TFunc } from './i18n';
+import { type TFunction } from 'i18next';
 
 // eslint-disable-next-line no-use-before-define
 export type JSONVal = JSONObj | number | string | boolean | null | void;
 export type JSONObj = {[ key: string ]: JSONVal};
 
-const parsers: {[key: string]: (data: JSONObj, t: TFunc, namespace?: string) => string} = {
+const parsers: {[key: string]: (data: JSONObj, t: TFunction, namespace?: string) => string} = {
   dateTime(data: JSONObj): string {
     const { val } = data;
     const date = new Date(Number(val));
@@ -20,7 +20,7 @@ const parsers: {[key: string]: (data: JSONObj, t: TFunc, namespace?: string) => 
 
     return `${year}-${month}-${day} ${hour}:${minute}`;
   },
-  trans(data: JSONObj, t: TFunc, namespace?: string): string {
+  trans(data: JSONObj, t: TFunction, namespace?: string): string {
     const { params, key } = data;
     if (typeof key !== 'string') {
       throw new Error('Invalid key');
@@ -33,7 +33,7 @@ const parsers: {[key: string]: (data: JSONObj, t: TFunc, namespace?: string) => 
   },
 };
 
-function parse(t: TFunc, data: JSONObj, namespace?: string): string {
+function parse(t: TFunction, data: JSONObj, namespace?: string): string {
   if (!data || typeof data !== 'object') throw new Error('Invalid data');
   const { parser } = data;
   if (typeof parser !== 'string') throw new Error('Invalid parser type');
@@ -43,7 +43,7 @@ function parse(t: TFunc, data: JSONObj, namespace?: string): string {
   throw new Error(`Unknown parser: ${parser}`);
 }
 
-function tParse(t: TFunc, key: string, params?: JSONObj, namespace?: string): string {
+function tParse(t: TFunction, key: string, params?: JSONObj, namespace?: string): string {
   const parsedParams = {};
   const localParams = params;
   if (localParams) {
@@ -62,7 +62,7 @@ function tParse(t: TFunc, key: string, params?: JSONObj, namespace?: string): st
 }
 
 function backendT(
-  t: TFunc,
+  t: TFunction,
   _message: string | { message: string, trans?: { key: string, params?: JSONObj }},
   _trans?: {
     key: string,

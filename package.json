@@ -1,5 +1,5 @@
 {
-  "name": "i18n-react-system",
+  "name": "@pija-ab/i18n-react-system",
   "version": "1.0.0",
   "description": "Helper functions and classes for translation work",
   "main": "lib/index.js",
@@ -21,24 +21,24 @@
   },
   "homepage": "https://github.com/PiJaAB/i18next-react-system#readme",
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.0.0-beta.53",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/runtime": "^7.4.5",
-    "babel-eslint": "^10.0.1",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "eslint": "^5.14.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-import-resolver-node": "^0.3.2",
-    "eslint-plugin-flowtype": "^3.4.2",
-    "eslint-plugin-import": "^2.16.0",
-    "flow-bin": "^0.107.0",
-    "flow-copy-source": "^2.0.8",
-    "rimraf": "^3.0.0"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-flow": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-import-resolver-node": "^0.3.3",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.2",
+    "flow-bin": "^0.122.0",
+    "flow-copy-source": "^2.0.9",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "i18next": "^17.0.14",
-    "react-i18next": "^10.12.3"
+    "i18next": "^19.4.2",
+    "react-i18next": "^11.3.4"
   }
 }
